@@ -30,7 +30,7 @@
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
-      "nerosiar.just-black"
+      "enkia.tokyo-night"
       "Catppuccin.catppuccin-vsc"
       "esbenp.prettier-vscode"
       "PKief.material-icon-theme"
@@ -66,7 +66,7 @@
       onCreate = {
         # Example: install JS dependencies from NPM
         idx-init = "git clone https://github.com/kaushiksahu18/idx && cp ./idx/.zshrc ~/ && rm -rf ./idx && source ~/.zshrc";
-        starship-config = "starship preset pure-preset -o ~/.config/starship.toml";
+        starship-config = "sleep 10 && starship preset pure-preset -o ~/.config/starship.toml";
       };
       # Commands to execute whenever the workspace is opened.
       onStart = {
