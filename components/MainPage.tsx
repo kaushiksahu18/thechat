@@ -29,17 +29,12 @@ function MainPage() {
             >
               <li>
                 <Link href="#features" className="hover:text-primary">
-                  Features
+                  <Button className="py-1" size="sm" variant="ghost">Features</Button>
                 </Link>
               </li>
               <li>
-                <Link href="#cta" className="hover:text-primary">
-                  Signup
-                </Link>
-              </li>
-              <li>
-                <Link href={"/chat"} className="hover:text-primary">
-                  <Button className="py-1">Chat</Button>
+                <Link href="/chat" className="hover:text-primary">
+                  <Button className="py-1" size="sm" variant="ghost">Chat</Button>
                 </Link>
               </li>
             </motion.ul>
@@ -76,7 +71,7 @@ function MainPage() {
               ].map((feature, index) => (
                 <motion.div
                   key={index}
-                  className="rounded-lg bg-card p-6 text-center shadow-md"
+                  className="rounded-lg bg-card p-6 text-center shadow-md flex flex-col items-center justify-between"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}

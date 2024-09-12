@@ -80,11 +80,13 @@ function HeroPage() {
                 type="text"
                 placeholder="Type a message..."
                 className="mr-2 flex-grow"
+                disabled
               />
               <Button
                 type="submit"
                 size="icon"
                 onClick={() => router.push("/chat")}
+                disabled
               >
                 <Send className="h-4 w-4" />
               </Button>
